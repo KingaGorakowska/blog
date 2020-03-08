@@ -1,0 +1,21 @@
+<%- include('header') %>
+
+	<h1>Form - add new post in blog</h1>
+	<form action="/insertPost" method="post">
+	
+		<p>
+			<label>Title article: </label><br/>
+			<input type="text" name="title" placeholder="title" />
+		</p>
+		<p>
+			<label>Text article: </label><br/>
+			<textarea name="description" placeholder="description"></textarea>
+		</p>
+		<p>
+			<input type="submit" value="Add new post" />
+		</p>
+		
+		
+	</form>
+
+<%- include('footer') %>

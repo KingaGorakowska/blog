@@ -1,0 +1,23 @@
+<%- include('header') %>
+
+	<h1>Form - edit post in blog</h1>
+	<form action="/editPost/<%= id %>" method="post">
+	
+		<p>
+			<label>Title article: </label><br/>
+			<input type="text" name="title" placeholder="title" value="<%= post.title %>" />
+		</p>
+		<p>
+			<label>Text article: </label><br/>
+			<textarea name="description" placeholder="description">
+				<%= post.description %>
+			</textarea>
+		</p>
+		<p>
+			<input type="submit" value="Add changes"/>
+		</p>
+		
+		
+	</form>
+
+<%- include('footer') %>

@@ -1,1 +1,18 @@
-<h1>hellow <%= name %>!!!</h1>
+<%- include('header') %>
+
+
+	<ul>
+		<% posts.forEach(function(date, index){ %>
+			<li>
+				<b><%= date.title %></b>
+				<a href="/details/<%- index %>">Show details</a>
+				<a href="/delete/<%- index %>">Delete</a>
+				<a href="/editPost/<%- index %>">Edit</a>
+			</li>
+		
+		<% }); %>
+	</ul>
+	</ul>
+
+
+<%- include('footer') %>
